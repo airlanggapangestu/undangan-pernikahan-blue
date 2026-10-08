@@ -11,12 +11,12 @@
     background-image:
       radial-gradient(
         circle at 20% 10%,
-        rgba(232, 196, 196, 0.15) 0%,
+        rgba(176, 204, 238, 0.18) 0%,
         transparent 40%
       ),
       radial-gradient(
         circle at 80% 70%,
-        rgba(201, 169, 110, 0.1) 0%,
+        rgba(150, 185, 228, 0.12) 0%,
         transparent 40%
       );
     background-attachment: fixed;
@@ -25,15 +25,15 @@
 
 @layer components {
   .btn-primary {
-    @apply px-8 py-3 rounded-full bg-rose-deep text-white 
-           hover:bg-rose-deep/90 transition-all duration-300 
-           shadow-lg shadow-rose-deep/30 tracking-wider text-sm
+    @apply px-8 py-3 rounded-full bg-azure-deep text-white 
+           hover:bg-azure-deep/90 transition-all duration-300 
+           shadow-lg shadow-azure-deep/30 tracking-wider text-sm
            border border-white/20 relative overflow-hidden;
   }
 
   .btn-outline {
-    @apply px-6 py-2 rounded-full border border-gold text-gold
-           hover:bg-gold hover:text-white transition-all duration-300
+    @apply px-6 py-2 rounded-full border border-pearl text-pearl
+           hover:bg-pearl hover:text-white transition-all duration-300
            tracking-wider text-xs uppercase;
   }
 
@@ -52,22 +52,22 @@
   .ornament-line::before,
   .ornament-line::after {
     content: "";
-    @apply h-px w-16 md:w-24 bg-gradient-to-r from-transparent via-gold to-transparent;
+    @apply h-px w-16 md:w-24 bg-gradient-to-r from-transparent via-pearl to-transparent;
   }
 
   /* Card dengan border dekoratif */
   .deco-card {
     @apply relative bg-white rounded-2xl p-8 shadow-lg
-           border border-gold/20;
+           border border-pearl/20;
   }
   .deco-card::before {
     content: "";
-    @apply absolute inset-2 border border-gold/20 rounded-xl pointer-events-none;
+    @apply absolute inset-2 border border-pearl/20 rounded-xl pointer-events-none;
   }
 
-  /* Gold text gradient */
-  .text-gold-gradient {
-    background: linear-gradient(135deg, #c9a96e 0%, #e5d4a8 50%, #c9a96e 100%);
+  /* Pearl blue text gradient */
+  .text-pearl-gradient {
+    background: linear-gradient(135deg, #6E9AD0 0%, #D6E6FA 50%, #6E9AD0 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -79,9 +79,9 @@
   width: 8px;
 }
 ::-webkit-scrollbar-track {
-  background: #faf7f2;
+  background: #EDF4FD;
 }
 ::-webkit-scrollbar-thumb {
-  background: #c9a96e;
+  background: #6E9AD0;
   border-radius: 4px;
 }

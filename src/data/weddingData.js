@@ -1,7 +1,7 @@
 export const weddingData = {
   groom: {
     name: "Muhammad Attamimi Halilintar",
-    short: "Atta",
+    short: "Airlangga",
     parents: "Putra dari Bapak Anofial Asmid & Ibu Lenggogeni Faruk",
     photo: "/images/groom.jpg",
     instagram: "@attahalilintar",

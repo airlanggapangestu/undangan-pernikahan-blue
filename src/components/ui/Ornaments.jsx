@@ -16,7 +16,7 @@ export function FloralCorner({ position = "top-left", className = "" }) {
   return (
     <svg
       className={`absolute ${positions[position]} ${rotations[position]} w-32 h-32 md:w-48 md:h-48 
-                  text-gold/40 pointer-events-none ${className}`}
+                  text-pearl/40 pointer-events-none ${className}`}
       viewBox="0 0 200 200"
       fill="none"
     >
@@ -47,9 +47,9 @@ export function FloralCorner({ position = "top-left", className = "" }) {
         opacity="0.6"
       />
       <circle cx="60" cy="35" r="6" fill="currentColor" opacity="0.6" />
-      <circle cx="60" cy="35" r="3" fill="#FAF7F2" />
+      <circle cx="60" cy="35" r="3" fill="#F6FAFF" />
       <circle cx="105" cy="70" r="5" fill="currentColor" opacity="0.5" />
-      <circle cx="105" cy="70" r="2.5" fill="#FAF7F2" />
+      <circle cx="105" cy="70" r="2.5" fill="#F6FAFF" />
       <circle cx="25" cy="25" r="2" fill="currentColor" opacity="0.4" />
       <circle cx="130" cy="95" r="2" fill="currentColor" opacity="0.4" />
     </svg>
@@ -62,13 +62,13 @@ export function FloralDivider({ className = "" }) {
     <div
       className={`flex items-center justify-center gap-4 my-10 ${className}`}
     >
-      <span className="h-px w-12 md:w-20 bg-gradient-to-r from-transparent to-gold" />
+      <span className="h-px w-12 md:w-20 bg-gradient-to-r from-transparent to-pearl" />
       <svg
         width="40"
         height="40"
         viewBox="0 0 40 40"
         fill="none"
-        className="text-gold"
+        className="text-pearl"
       >
         <circle cx="20" cy="20" r="3" fill="currentColor" />
         <path
@@ -94,7 +94,7 @@ export function FloralDivider({ className = "" }) {
         <circle cx="6" cy="20" r="1.5" fill="currentColor" opacity="0.5" />
         <circle cx="34" cy="20" r="1.5" fill="currentColor" opacity="0.5" />
       </svg>
-      <span className="h-px w-12 md:w-20 bg-gradient-to-l from-transparent to-gold" />
+      <span className="h-px w-12 md:w-20 bg-gradient-to-l from-transparent to-pearl" />
     </div>
   );
 }
@@ -106,25 +106,25 @@ export function Monogram({ text = "R & A", className = "" }) {
       <div className="relative">
         <div
           className="w-20 h-20 md:w-24 md:h-24 rounded-full 
-                        border-2 border-gold/40 flex items-center justify-center
+                        border-2 border-pearl/40 flex items-center justify-center
                         bg-gradient-to-br from-cream to-cream-dark shadow-md"
         >
-          <span className="font-script text-3xl md:text-4xl text-gold-gradient">
+          <span className="font-script text-3xl md:text-4xl text-pearl-gradient">
             {text}
           </span>
         </div>
-        <div className="absolute inset-0 rounded-full border border-gold/20 scale-110" />
+        <div className="absolute inset-0 rounded-full border border-pearl/20 scale-110" />
       </div>
     </div>
   );
 }
 
 // ─── 4. WATERCOLOR BLOB ───────────────────────
-export function WatercolorBlob({ className = "", color = "rose" }) {
+export function WatercolorBlob({ className = "", color = "azure" }) {
   const colors = {
-    rose: "from-rose-soft/40 to-rose-deep/20",
-    gold: "from-gold-light/40 to-gold/20",
-    sage: "from-sage/30 to-sage/10",
+    azure: "from-azure-soft/40 to-azure-deep/20",
+    pearl: "from-pearl-light/40 to-pearl/20",
+    mist: "from-mist/30 to-mist/10",
   };
   return (
     <div
@@ -138,7 +138,7 @@ export function WatercolorBlob({ className = "", color = "rose" }) {
 export function LeafSprig({ className = "" }) {
   return (
     <svg
-      className={`text-sage/60 ${className}`}
+      className={`text-mist/60 ${className}`}
       width="60"
       height="120"
       viewBox="0 0 60 120"

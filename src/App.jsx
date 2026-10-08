@@ -15,7 +15,7 @@ import MusicPlayer from "./components/MusicPlayer";
 import { weddingData } from "./data/weddingData";
 import useScrollReveal from "./hooks/useScrollReveal";
 import "./Invitation.css";
-import "./RoseTheme.css";
+import "./BlueTheme.css";
 
 export default function App() {
   const [opened, setOpened] = useState(false);
@@ -33,7 +33,7 @@ export default function App() {
       <div
         className="fixed inset-0 pointer-events-none z-0 opacity-[0.03]"
         style={{
-          backgroundImage: `radial-gradient(circle, #C9A96E 1px, transparent 1px)`,
+          backgroundImage: `radial-gradient(circle, #7FA9DA 1px, transparent 1px)`,
           backgroundSize: "30px 30px",
         }}
       />

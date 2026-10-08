@@ -11,20 +11,20 @@ export default {
         parisienne: ['"Parisienne"', "cursive"],
       },
       colors: {
-        cream: "#FFF4F9",
-        "cream-dark": "#FFE2EE",
-        rose: {
-          soft: "#FFD0E2",
-          DEFAULT: "#E875A5",
-          deep: "#B82967",
+        cream: "#F3F8FF",
+        "cream-dark": "#DCE9FB",
+        azure: {
+          soft: "#CFE2F8",
+          DEFAULT: "#4C7EC2",
+          deep: "#2C4E86",
         },
-        gold: {
-          light: "#FFD8E8",
-          DEFAULT: "#C94F7E",
-          deep: "#A72C62",
+        pearl: {
+          light: "#E6EEFA",
+          DEFAULT: "#7FA3D4",
+          deep: "#5C82BE",
         },
-        ink: "#65233F",
-        sage: "#8FA68E",
+        ink: "#2B3F5C",
+        mist: "#8FA8C7",
       },
       backgroundImage: {
         "floral-pattern": "url('/images/pattern-floral.png')",

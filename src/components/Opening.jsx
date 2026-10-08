@@ -20,7 +20,7 @@ export default function Opening({ onOpen, data }) {
     >
       <div className="opening-photo">
         <img
-          src="/images/gallery/1.jpg"
+          src="/images/couple-hero.jpg"
           alt={`${data.groom.short} dan ${data.bride.short}`}
           className="opening-photo-image"
         />
@@ -59,8 +59,14 @@ export default function Opening({ onOpen, data }) {
         </svg>
 
         <div className="opening-scattered" aria-hidden="true">
-          <span>✿</span><span>♡</span><span>✦</span><span>✿</span>
-          <span>✧</span><span>♡</span><span>✿</span><span>✦</span>
+          <span>✿</span>
+          <span>♡</span>
+          <span>✦</span>
+          <span>✿</span>
+          <span>✧</span>
+          <span>♡</span>
+          <span>✿</span>
+          <span>✦</span>
         </div>
 
         <div className="opening-content">
@@ -70,7 +76,11 @@ export default function Opening({ onOpen, data }) {
             <span className="opening-eyebrow-line" aria-hidden="true" />
           </motion.div>
 
-          <motion.div className="opening-flourish" aria-hidden="true" {...reveal(0.3)}>
+          <motion.div
+            className="opening-flourish"
+            aria-hidden="true"
+            {...reveal(0.3)}
+          >
             <span>✦</span>
           </motion.div>
 
@@ -89,9 +99,13 @@ export default function Opening({ onOpen, data }) {
           </motion.p>
 
           <motion.div className="opening-details" {...reveal(0.8)}>
-            <span className="opening-details-ornament" aria-hidden="true">✧</span>
+            <span className="opening-details-ornament" aria-hidden="true">
+              ✧
+            </span>
             <p className="opening-date">{data.dateLabel}</p>
-            {data.location && <p className="opening-location">{data.location}</p>}
+            {data.location && (
+              <p className="opening-location">{data.location}</p>
+            )}
           </motion.div>
 
           <motion.button
@@ -104,7 +118,13 @@ export default function Opening({ onOpen, data }) {
           >
             <span>Buka Undangan</span>
             <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
-              <path d="M4 12h15m-6-6 6 6-6 6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+              <path
+                d="M4 12h15m-6-6 6 6-6 6"
+                stroke="currentColor"
+                strokeWidth="1.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
             </svg>
           </motion.button>
 

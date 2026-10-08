@@ -8,7 +8,7 @@ export default function GardenSprinkles({ variant = "" }) {
               <ellipse key={angle} cx="32" cy="14" rx="7.5" ry="12" transform={`rotate(${angle} 32 32)`} />
             ))}
           </g>
-          <circle cx="32" cy="32" r="8" fill="#fff4f9" stroke="currentColor" strokeWidth="1.2" />
+          <circle cx="32" cy="32" r="8" fill="#F4F9FF" stroke="currentColor" strokeWidth="1.2" />
           <circle cx="32" cy="32" r="2.5" fill="currentColor" />
         </svg>
       ))}

@@ -57,15 +57,15 @@ const MusicPlayer = forwardRef(function MusicPlayer(
         tabIndex={visible ? 0 : -1}
         className={`group fixed bottom-4 right-4 z-[90] inline-flex items-center gap-2
                    h-[42px] pl-[6px] pr-4
-                   rounded-full border border-[#ac896d]/40
-                   bg-[#fffcf8]/90 backdrop-blur
-                   shadow-[0_6px_18px_rgba(75,41,52,0.12)]
-                   text-[#793e4d]
+                   rounded-full border border-[#4F7BB4]/40
+                   bg-[#FCFDFF]/90 backdrop-blur
+                   shadow-[0_6px_18px_rgba(40,70,115,0.14)]
+                   text-[#37619F]
                    transition-all duration-500 ease-out
-                   hover:-translate-y-0.5 hover:bg-[#fffcf8]
-                   hover:border-[#793e4d]/55
-                   hover:shadow-[0_10px_24px_rgba(75,41,52,0.2)]
-                   focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#793e4d]
+                   hover:-translate-y-0.5 hover:bg-[#FCFDFF]
+                   hover:border-[#37619F]/55
+                   hover:shadow-[0_10px_24px_rgba(40,70,115,0.24)]
+                   focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#37619F]
                    md:bottom-6 md:right-6
                    ${
                      visible
@@ -75,7 +75,7 @@ const MusicPlayer = forwardRef(function MusicPlayer(
       >
         <span
           className="relative grid h-[30px] w-[30px] flex-none place-items-center
-                     rounded-full bg-[#793e4d] text-[#fff8f1]
+                     rounded-full bg-[#37619F] text-[#F5FAFF]
                      transition-transform duration-300
                      group-hover:scale-105
                      max-md:h-7 max-md:w-7"
@@ -89,7 +89,7 @@ const MusicPlayer = forwardRef(function MusicPlayer(
             <span
               aria-hidden="true"
               className="pointer-events-none absolute inset-0 rounded-full
-                         border border-[#793e4d]
+                         border border-[#37619F]
                          animate-[invMusicPulse_2.4s_ease-out_infinite]"
             />
           )}
@@ -100,7 +100,7 @@ const MusicPlayer = forwardRef(function MusicPlayer(
                       transition-colors duration-300
                       max-md:text-[8px] max-md:tracking-[0.18em]
                       max-[380px]:hidden
-                      ${playing ? "text-[#793e4d]" : "text-[#8b6a5f]"}`}
+                      ${playing ? "text-[#37619F]" : "text-[#64779A]"}`}
         >
           {playing ? "Now Playing" : "Play Music"}
         </span>
